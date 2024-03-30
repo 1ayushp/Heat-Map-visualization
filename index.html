@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heat Map</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div id="chart_container">
+    <h1 id="title">Heat Map</h1>
+    <h4 id="description"></h4>
+    <div id="tooltip">
+
+    </div>
+    <svg id="canvas">
+    </svg>
+    <svg id="legend">
+        <g>
+            <rect y="0" width="30" height="30" fill="SteelBlue"></rect>
+            <text x="40" y="20">Variance less than -1</text>
+            <rect y="30" width="30" height="30" fill="LIghtSteelBlue"></rect>
+            <text x="40" y="50">On or below Average</text>
+
+            <rect y="60" width="30" height="30" fill="Orange"></rect>
+            <text x="40" y="80">Above average</text>
+            <rect y="90" width="30" height="30" fill="Crimson"></rect>
+            <text x="40" y="110">Variance more than 1</text>
+            
+        </g>
+
+    </svg>
+</div>
+</body>
+<script defer src="./script.js"></script>
+<script defer src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
